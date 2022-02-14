@@ -1,0 +1,8 @@
+.main{
+    width: 80%;
+    height: 00px;
+    margin: 0 auto;
+    background-color: darkgoldenrod;
+    display: flex;
+    flex-direction: column;
+}

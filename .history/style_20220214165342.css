@@ -1,0 +1,18 @@
+.main{
+    width: 80%;
+    height: 600px;
+    margin: 0 auto;
+    background-color: darkgoldenrod;
+    display: flex;
+    flex-direction: column;
+}
+h1{    
+   padding-left: 50%;
+   transform: translate();
+}
+
+.result{
+    width: 80%;
+    height: 300px;
+    font-size: 200px;
+}

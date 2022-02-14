@@ -1,0 +1,30 @@
+.main{
+    width: 80%;
+    height: 600px;
+    margin: 0 auto;
+    background-color: darkgoldenrod;
+    display: flex;
+    flex-direction: column;
+}
+.counter{
+    text-align: center;
+   /* padding-left: 40%; */
+}
+
+.result{
+    
+    height: 340px;
+    font-size: 200px;
+    text-align: center;
+}
+
+
+.buttons{
+    display: flex;
+    justify-content:space-around;
+}
+
+button{
+    color: green;
+    border-radius: 10p;
+}
