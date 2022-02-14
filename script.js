@@ -25,3 +25,27 @@ sumBtn.addEventListener("click", function () {
   }  
   resultSum.value = sum(arg1)(arg2);
 });
+
+let setIntervalId;
+let date = 1;
+let showt = 0;
+function fntime(){ 
+  showTime.innerHTML=date ;
+ showt =  document.querySelector(".showTime").innerHTML;
+  date = Number(showt)+1;
+  
+}
+let showTime = document.querySelector(".showTime");
+let starttimer = document.querySelector(".starttime");
+let endttimer = document.querySelector(".endtime");
+
+
+starttimer.addEventListener("click",function(){
+  setIntervalId =  setInterval(fntime,1000);
+  
+})
+endttimer.addEventListener("click",function(){
+  clearInterval(setIntervalId);
+})
+
+

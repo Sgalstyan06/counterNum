@@ -38,3 +38,13 @@ button {
 .outPutSum{
     font-size: 22px;
 }
+.timer{
+  display: flex;
+  justify-content: space-evenly;
+}
+.showTime{
+  display: inline-block;
+  font-size: 28px;
+  font-weight: 700;
+  text-align: center;
+}
