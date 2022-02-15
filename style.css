@@ -48,3 +48,9 @@ button {
   font-weight: 700;
   text-align: center;
 }
+
+.febonacci{
+  display: inline-block;
+  font-size: 28px;
+  font-weight: 700;
+}
