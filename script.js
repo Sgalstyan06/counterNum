@@ -46,6 +46,8 @@ starttimer.addEventListener("click",function(){
 })
 endttimer.addEventListener("click",function(){
   clearInterval(setIntervalId);
+  showTime.innerHTML = 0;
+  date = 0;
 })
 
 
