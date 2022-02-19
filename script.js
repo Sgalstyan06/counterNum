@@ -1,13 +1,28 @@
-let result = document.querySelector(".result").innerHTML;
+function Sum() {
+  let res = 0;
+  this.getUp = function () {
+    return ++res;
+   
+  };
+  this.getDown = function () {
+    return --res;
+    
+  };
+}
+
+let chaenResNumber = new Sum();
+
+let result = document.querySelector(".result");
 
 let decrease = document.querySelector(".LowerNumber");
 let increase = document.querySelector(".IncreaseNumber");
+
 decrease.addEventListener("click", function () {
-  document.querySelector(".result").innerHTML = --result;
+  result.innerHTML = chaenResNumber.getDown();
 });
 
 increase.addEventListener("click", function () {
-  document.querySelector(".result").innerHTML = ++result;
+  result.innerHTML = chaenResNumber.getUp();
 });
 
 let inp1 = document.querySelector(".input1");
@@ -53,15 +68,15 @@ let a = 1;
 let fib1 = 1;
 let fib2 = 1;
 let fibres = 1;
-febbtn.addEventListener("click", function () { 
-    //fibonachi with recursion
-  function rec(a){
-    if(a===1 || a===2)return 1;
-    return rec(a-2)+rec(a-1);
+febbtn.addEventListener("click", function () {
+  //fibonachi with recursion
+  function rec(a) {
+    if (a === 1 || a === 2) return 1;
+    return rec(a - 2) + rec(a - 1);
   }
   febonaci.innerHTML += rec(fibres) + ", ";
-  fibres++;  
-  
+  fibres++;
+
   //simply method febonacci
   //  if(a===1 || a===2){
   //   febonaci.innerHTML += fibres+", ";
